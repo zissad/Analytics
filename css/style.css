@@ -1,0 +1,258 @@
+:root {
+    --primaryColor: #EF2A82;
+    --mainTextColor: #172755;
+    --SeconderyTextColor: #8794BA;
+
+    --primaryText: 'Cairo', sans-serif;
+    --SeconderyText: 'Poppins', sans-serif;
+}
+ body {
+    font-family: var(--SeconderyText);
+ }
+
+ .main {
+     position: relative;
+     height: 120vh;
+ }
+ .main .background {
+     position: absolute;
+     z-index: -1;
+     width: 100%;
+     height: 120vh;
+     object-fit: cover;
+     top: 0;
+ }
+
+/* ==========Navigation Bar Style============= */
+.main .container {
+    display: flex;
+    height: 130px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .container .nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .container .nav-left img {
+    width: 160px;
+}
+.main .container .nav-left ul {
+    margin-left: 60px;
+}
+.main .container .nav-left ul .menu-btn {
+    display: none;
+}
+.main .container .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .container .nav-right .nav_a {
+    color: var(--SeconderyTextColor);
+    font-size: 16px;
+    margin-right: 20px;
+    transition: all 0.4s ease;
+}
+.main .container .nav-right .nav_a:hover {
+    color: #fff;
+}
+.main .container .nav-right i {
+    font-size: 30px;
+    color: var(--SeconderyTextColor);
+    display: none;
+    margin-left: 40px;
+    cursor: pointer;
+}
+/* ==========Navigation Bar Style============= */
+
+/* ==========Hero section Style============= */
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-top: 40px;
+}
+.hero .container .hero-left p {
+    margin: 30px 0 60px 0;
+}
+.hero .container .hero-right .hero_im_1 {
+    width: 700px;
+    height: auto;
+}
+/* ==========Hero section Style============= */
+
+
+/* ==========Features Section Style============= */
+.features .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    height: auto;
+}
+.features .container p {
+    text-align: center;
+    margin: 40px 0;
+}
+.features .container .box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 60px;
+}
+.features .container .box-container .box {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.features .container .box-container .box p {
+    margin-top: 10px;
+}
+.features .container .box-container .box h3 {
+    margin-top: 20px;
+}
+.features .container .box-container .box img {
+    width: 60px;
+}
+/* ==========Features Section Style============= */
+
+
+/* ==========Automated Part Style============= */
+.automated .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+.automated .container .automated-left p {
+    margin-top: 20px;
+}
+.automated .container img {
+    width: 700px;
+}
+/* ==========Automated Part Style============= */
+
+
+/* ==========Buttom Part Style============= */
+.buttom {
+    position: relative;
+    height: auto;
+}
+.buttom .background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ==========Buttom Part Style============= */
+
+
+/* ==========Plan Section Style============= */
+.plan .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plan .container h2 {
+    margin-top: 220px;
+    color: #fff;
+}
+.plan .container p {
+    text-align: center;
+    margin-top: 20px;
+}
+.plan .container .plan-box-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    margin-top: 120px;
+}
+.plan .container .plan-box-container .plan-box {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #0F1F4B;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+}
+.plan .container .plan-box-container .plan-box:hover {
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+.plan .container .plan-box-container .plan-box:hover h3,
+.plan .container .plan-box-container .plan-box:hover h1 {
+    color: var(--mainTextColor);
+}
+.plan .container .plan-box-container .plan-box:hover .btn-1 {
+    background: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    color: #fff;
+}
+.plan .container .plan-box-container .plan-box h3 {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 0px;
+    transition: all 0.4s ease;
+}
+.plan .container .plan-box-container .plan-box .user {
+    margin-top: 0px;
+}
+.plan .container .plan-box-container .plan-box hr {
+    width: 80%;
+    margin: 20px 0;
+    color: #2A407C;
+}
+.plan .container .plan-box-container .plan-box h1 {
+    transition: all 0.4s ease;
+}
+.plan .container .plan-box-container .plan-box h1 small {
+    font-size: 30px;
+}
+.plan .container .plan-box-container .plan-box .box-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+/* ==========Plan Section Style============= */
+
+
+
+/* ==========Footer Section Style============= */
+.footer-container .container hr {
+    margin: 80px 0 40px 0;
+}
+.footer-container .container .footer img {
+    width: 180px;
+    cursor: pointer;
+}
+.footer-container .container .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+}
+.footer-container .container .footer .social-icon {
+    display: flex;
+}
+.footer-container .container .footer .social-icon i {
+    font-size: 25px;
+    margin: 20px;
+    color: var(--SeconderyTextColor);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.footer-container .container .footer .social-icon i:hover {
+    color: var(--primaryColor);
+}
+/* ==========Footer Section Style============= */
+
